@@ -18,6 +18,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/todos">Todos</a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/new-todo">Create Todo</a>
+                </li>
                 </ul>
             </div>
         </nav>
