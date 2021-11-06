@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+Todos
+@endsection
+
 @section('content')
 <h1 class="text-center my-5">Todos Page</h1>
 <div class="row justify-content-center">
