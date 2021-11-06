@@ -21,9 +21,10 @@
                             @foreach($todos as $todo)
                             <li class="list-group-item">
                                 {{ $todo->name }}
-                                <button class="btn btn-primary btn-sm" style="float:right">
+
+                                <a href="/todos/{{ $todo->id }}" class="btn btn-primary btn-sm" style="float:right"> 
                                     View
-                                </button>
+                                </a>
                             </li>
                             @endforeach
                         </ul>
