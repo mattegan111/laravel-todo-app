@@ -21,7 +21,7 @@ Todos
                         <a href="/todos/{{ $todo->id }}/delete" class="btn btn-danger btn-sm mx-1" style="float:right"> 
                             Delete
                         </a>
-                        <a href="/todos/{{ $todo->id }}/edit" class="btn btn-primary btn-sm mx-1" style="float:right"> 
+                        <a href="/todos/{{ $todo->id }}/edit" class="btn btn-success btn-sm mx-1" style="float:right"> 
                             Edit
                         </a>
                         <a href="/todos/{{ $todo->id }}" class="btn btn-primary btn-sm" style="float:right"> 
