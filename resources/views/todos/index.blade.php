@@ -14,7 +14,7 @@ Todos
             </div>
             <div class="card-body">
                 <ul class="list-group">
-                    @foreach($todos as $todo)
+                    @foreach($todos->reverse() as $todo)
                     @if($todo->completed === 0)
                     <li class="list-group-item">
                         <a href="/todos/{{ $todo->id }}/complete" class="mx-1" style="float:left;text-decoration:none;color:#000000;"> 
@@ -33,7 +33,7 @@ Todos
                     </li>
                     @endif
                     @endforeach
-                    @foreach($todos as $todo)
+                    @foreach($todos->reverse() as $todo)
                     @if($todo->completed === 1)
                     <li class="list-group-item">
                         <a href="/todos/{{ $todo->id }}/complete" class="mx-1" style="float:left;text-decoration:none;color:#aaaaaa;"> 
