@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodosController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,10 +19,10 @@ Route::get('/', function () {
 });
 
 Route::get('todos', [TodosController::class, 'index']);
-Route::get('todos/{todos}', [TodosController::class, 'show']);
+Route::get('todos/{todo}', [TodosController::class, 'show']);
 Route::get('new-todo', [TodosController::class, 'create']);
 Route::post('store-todo', [TodosController::class, 'store']);
-Route::get('todos/{todos}/edit', [TodosController::class, 'edit']);
-Route::post('todos/{todos}/update', [TodosController::class, 'update']);
+Route::get('todos/{todo}/edit', [TodosController::class, 'edit']);
+Route::post('todos/{todo}/update', [TodosController::class, 'update']);
 
-Route::get('todos/{todos}/delete', [TodosController::class, 'destroy']);
+Route::get('todos/{todo}/delete', [TodosController::class, 'destroy']);
