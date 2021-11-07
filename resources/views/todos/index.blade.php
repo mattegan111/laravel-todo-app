@@ -21,6 +21,9 @@ Todos
                         <a href="/todos/{{ $todo->id }}" class="btn btn-primary btn-sm" style="float:right"> 
                             View
                         </a>
+                        <a href="/todos/{{ $todo->id }}/edit" class="btn btn-primary btn-sm mx-1" style="float:right"> 
+                            Edit
+                        </a>
                     </li>
                     @endforeach
                 </ul>
