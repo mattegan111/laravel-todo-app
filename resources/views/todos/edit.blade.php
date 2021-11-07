@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="form-group text-center">
-                        <button class="btn btn-success" type="submit">Edit Todo</button>
+                        <button class="btn btn-success" type="submit">Save Changes</button>
                         <a href="/todos/{{ $todo->id }}/delete" class="btn btn-danger">Delete</a>
                     </div>
                 </form>
