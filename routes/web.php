@@ -25,3 +25,5 @@ Route::get('new-todo', [TodosController::class, 'create']);
 Route::post('store-todo', [TodosController::class, 'store']);
 Route::get('todos/{todos}/edit', [TodosController::class, 'edit']);
 Route::post('todos/{todos}/update', [TodosController::class, 'update']);
+
+Route::get('todos/{todos}/delete', [TodosController::class, 'destroy']);
